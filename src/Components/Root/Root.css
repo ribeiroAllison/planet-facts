@@ -38,5 +38,10 @@
     text-decoration: none;
 }
 
+#links a.active{
+    font-weight: bold;
+    text-shadow:1px 1px 10px var(--lightBlue), 1px 1px 10px var(--lightBlue);
+    
+}
 
 

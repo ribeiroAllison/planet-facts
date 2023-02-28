@@ -27,4 +27,31 @@
     margin: 0;
 }
 
+/* FOOTER SECTION */
+.footer{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
 
+.footer p{
+    font-family: var(--spartan);
+    font-size: 15px;
+    padding: 30px 30px 0 30px;
+
+}
+
+.footer h3{
+    font-family: var(--antonio) ;
+    font-size: 40px;
+    padding-left: 30px;
+}
+
+.cards{
+    border:1px solid var(--white);
+    margin-top: 10px;
+    height: 128px;
+    width: 255px;
+    
+}

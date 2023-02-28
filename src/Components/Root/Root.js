@@ -10,7 +10,7 @@ export default function Navbar () {
             <header>
                 <h2>THE PLANETS</h2>
                 <div id='links'>
-                <NavLink to="">Mercury</NavLink>
+                <NavLink to="/mercury">Mercury</NavLink>
                 <NavLink to="">Venus</NavLink>
                 <NavLink to="">Earth</NavLink>
                 <NavLink to="">Mars</NavLink>
