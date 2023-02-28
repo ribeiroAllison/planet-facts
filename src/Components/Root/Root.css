@@ -1,0 +1,42 @@
+#root{
+    
+    background-image: url("./img/back.png");
+    margin: 0;
+    height: 100vh;
+    
+    
+
+}
+
+#root header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px;
+    height: 85px;
+    border-bottom: 2px var(--white) solid;
+    
+}
+
+#root header h2{
+    font-family: var(--antonio);
+    font-size: 36px;
+    font-weight: 400;
+    
+}
+
+#links{
+    font-family: var(--spartan);
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    font-size: 20px;
+    
+}
+
+#links a{
+    text-decoration: none;
+}
+
+
+
