@@ -65,9 +65,14 @@
     margin: 5% 20px;
 }
 
-.content-ctr img{
+.mercury-img img{
     width: 290px;
     height: 290px;
+}
+
+.venus-img img{
+    width: 400px;
+    height: 400px;
 }
 
 .content{

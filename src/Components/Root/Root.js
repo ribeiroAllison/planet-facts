@@ -11,7 +11,7 @@ export default function Navbar () {
                 <h2>THE PLANETS</h2>
                 <div id='links'>
                 <NavLink to="/mercury">Mercury</NavLink>
-                <NavLink to="">Venus</NavLink>
+                <NavLink to="/venus">Venus</NavLink>
                 <NavLink to="">Earth</NavLink>
                 <NavLink to="">Mars</NavLink>
                 <NavLink to="">Jupiter</NavLink>

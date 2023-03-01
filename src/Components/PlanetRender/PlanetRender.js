@@ -1,8 +1,15 @@
 import { Outlet } from "react-router-dom"
 import '../../Components/Global.css'
+import { data } from "../../data"
+import { usePathname, eraseDash } from '../assets/functions';
 
-export default function Mercury () {
-   
+export default function PlanetCompiler () {
+    const path = usePathname();
+
+    const endPoint = eraseDash(path)
+
+    const planet = data[endPoint]
+    
     return(
         <div id="mercury">
             <main>
@@ -11,19 +18,19 @@ export default function Mercury () {
             <footer className="footer">
                 <div className="cards">
                     <p>ROTATION TIME</p>
-                    <h3>58.6 DAYS</h3>
+                    <h3>{planet.rotation}</h3>
                 </div>
                 <div className="cards">
                     <p>REVOLUTION TIME</p>
-                    <h3>87.97 DAYS</h3>
+                    <h3>{planet.revolution}</h3>
                 </div>
                 <div className="cards">
                     <p>RADIUS</p>
-                    <h3>2,439.7 KM</h3>
+                    <h3>{planet.radius}</h3>
                 </div>
                 <div className="cards">
                     <p>AVERAGE TEMP</p>
-                    <h3>430°c</h3>
+                    <h3>{planet.temperature}</h3>
                 </div>
             </footer>
         </div>
