@@ -33,6 +33,7 @@
     justify-content: space-around;
     width: 80%;
     margin: auto;
+    padding-bottom: 20px;
 }
 
 .footer p{
@@ -61,7 +62,7 @@
 .content-ctr{
     display: flex;
     justify-content: space-around;
-    margin: 10% 20px;
+    margin: 5% 20px;
 }
 
 .content-ctr img{
@@ -102,9 +103,45 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    
 }
 
 #source-label{
     padding-right: 13px;
+    font-size: 16px;
+    
 }
 
+.source a{
+    font-size: 13px;
+}
+
+
+/* BUTTON SECTION */
+#buttons a{
+    display: grid;
+    border: 1px solid var(--white);
+    grid-auto-flow: column;
+    align-items: center;
+    text-decoration: none;
+    font-family: var(--spartan);
+    
+}
+
+#buttons p{
+    padding: 0;
+}
+
+#buttons .buttonNumber{
+    padding-left: 20px;
+    color: rgba(255, 255, 255, 0.500);
+}
+
+#buttons a{
+    margin: 10px 20%;
+    height: 48px;
+}
+
+#buttons a.active{
+    background-color: var(--lightBlue);
+}
