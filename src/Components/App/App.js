@@ -15,7 +15,7 @@ function App() {
     <Route path="/" element={ <Root />}>
       {/* <Route index element={<PlanetInfo />}/> */}
       <Route path="mercury"  element={<PlanetRender />}>
-        <Route index element={<PlanetInfo />}/>
+        <Route index element={<PlanetInfo />} end/>
         <Route path="structure" element={<PlanetInfo />}/>
         <Route path="geology" element={<PlanetInfo />}/>
       </Route>

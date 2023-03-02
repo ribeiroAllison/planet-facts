@@ -11,9 +11,10 @@ export default function Buttons (){
 
     return(
         <div id='buttons' className={`buttons-${targetPlanet}`}>
-            <NavLink to={`/${targetPlanet}`}>
+            <NavLink to={`/${targetPlanet}`} end>
                 <p className='buttonNumber'>01</p>
                 <p>OVERVIEW</p>
+                
             </NavLink>
             <NavLink to={`/${targetPlanet}/structure`}>
                 <p className='buttonNumber'>02</p>
