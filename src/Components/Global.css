@@ -70,9 +70,19 @@
     height: 220px;
 }
 
+#mercury-geology img{
+    width: 220px;
+    height: 320px;
+}
+
 .venus-img img{
     width: 300px;
     height: 300px;
+}
+
+#venus-geology img{
+    width: 300px;
+    height: 360px;
 }
 
 .earth-img img{
@@ -80,9 +90,19 @@
     height: 320px;
 }
 
+#earth-geology img{
+    width: 320px;
+    height: 360px;
+}
+
 .mars-img img{
     width: 260px;
     height: 260px;
+}
+
+#mars-geology img {
+    width: 260px;
+    height: 340px;
 }
 
 .jupiter-img img{
@@ -95,14 +115,26 @@
     height: 400px;
 }
 
+
+
 .uranus-img img{
     width: 380px;
     height: 380px;
 }
 
+#uranus-geology img{
+    width: 380px;
+    height: 420px;
+}
+
 .neptune-img img{
-    width: 370px;
+    width: 350px;
     height: 350px;
+}
+
+#neptune-geology img {
+    width: 350px;
+    height: 390px;
 }
 
 .content{

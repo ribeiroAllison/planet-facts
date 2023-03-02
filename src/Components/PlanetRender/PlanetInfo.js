@@ -1,49 +1,68 @@
 import '../../Components/Global.css';
-import { NavLink } from 'react-router-dom';
 import { data } from '../../data';
-import { usePathname, eraseDash } from '../assets/functions';
+import { usePathname, eraseSlash, endPoint } from '../assets/functions';
+import Buttons from './Buttons';
 
 export default function PlanetInfo (){
 
     
     const path = usePathname();
 
-    const endPoint = eraseDash(path)
+    const targetPlanet = eraseSlash(path)
 
-    const planet = data[endPoint]
+    const planet = data[targetPlanet]
+
+    const endPointPath = endPoint(path)
+
+    const endPointString = endPointPath ? "-" + endPointPath : "";
+
+    function findContent () {
+        if(endPointPath === false) {
+            return planet.overview.content
+        } else if(endPointPath === "structure"){
+            return planet.structure.content
+        } else {
+            return planet.geology.content
+        }
+    }
+
+    function findSource () {
+        if(endPointPath === false) {
+            return planet.overview.source
+        } else if(endPointPath === "structure"){
+            return planet.structure.source
+        } else {
+            return planet.geology.source
+        }
+    }
+
+    const content = findContent();
+
+    const source = findSource();
+
+    
+
+    
     
     
     
 
     return(
         <div className='content-ctr'>
-            <div className={`${endPoint}-img img-ctr`}>
-                <img  alt="planet mercury" src={require(`../assets/planet-${endPoint}.png`)} />
+            <div className={`${targetPlanet}-img img-ctr`} id={`${targetPlanet}-${endPointPath}`}>
+                <img  alt="planet picture" src={require(`../assets/planet-${targetPlanet}${endPointString}.png`)} />
             </div>
             
             <article className='content'>
                 <h1>{ planet.name.toUpperCase()}</h1>
                 <p>
-                {planet.overview.content}
+                {content}
                 </p>
                 <div className='source'>
                     <p id="source-label">Source:</p>
-                    <a href={planet.overview.source} target='_blank' rel="noreferrer">Wikipedia</a>
+                    <a href={source} target='_blank' rel="noreferrer">Wikipedia</a>
                 </div>
-                <div id='buttons' className={`buttons-${endPoint}`}>
-                    <NavLink to={`/${endPoint}`}>
-                        <p className='buttonNumber'>01</p>
-                        <p>OVERVIEW</p>
-                    </NavLink>
-                    <NavLink to={`/${endPoint}/structure`}>
-                        <p className='buttonNumber'>02</p>
-                        <p>INTERNAL STRUCTURE</p>
-                    </NavLink>
-                    <NavLink to={`/${endPoint}/geology`}>
-                        <p className='buttonNumber'>02</p>
-                        <p>SURFACE GEOLOGY</p>
-                    </NavLink>
-                </div>
+                <Buttons />
             </article>
             
         </div>

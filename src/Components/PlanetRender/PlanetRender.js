@@ -1,14 +1,14 @@
 import { Outlet } from "react-router-dom"
 import '../../Components/Global.css'
 import { data } from "../../data"
-import { usePathname, eraseDash } from '../assets/functions';
+import { usePathname, eraseSlash } from '../assets/functions';
 
 export default function PlanetCompiler () {
     const path = usePathname();
 
-    const endPoint = eraseDash(path)
+    const targetPlanet = eraseSlash(path)
 
-    const planet = data[endPoint]
+    const planet = data[targetPlanet]
     
     return(
         <div id="mercury">
