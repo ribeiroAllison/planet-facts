@@ -18,10 +18,11 @@
     
 }
 
-#root header h2{
+#home{
     font-family: var(--antonio);
     font-size: 36px;
     font-weight: 400;
+    text-decoration: none;
     
 }
 

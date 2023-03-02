@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink, Outlet, Link } from 'react-router-dom';
 import './Root.css'
 import '../../Components/Global.css'
 
@@ -8,7 +8,7 @@ export default function Navbar () {
     return(
         <div id='root'>
             <header>
-                <h2>THE PLANETS</h2>
+                <Link to="/" id="home">THE PLANETS</Link>
                 <div id='links'>
                 <NavLink to="/mercury">Mercury</NavLink>
                 <NavLink to="/venus">Venus</NavLink>

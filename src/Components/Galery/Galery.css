@@ -1,0 +1,53 @@
+
+
+#galery{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100lvh;
+    margin-left:8%;
+    
+}
+
+.planet-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    text-decoration: none;
+    
+}
+
+.planet-card:hover{
+    border: 1px var(--lightBlue) solid;
+    box-shadow:
+    0 0 6px 3px var(--lightBlue);  /* inner white */
+    
+    transition: 1s;
+    
+}
+
+.planet-card img{
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+}
+
+.planet-card img:hover{
+    width: 220px;
+    height: 220px;
+    transition: 1s;
+}
+
+.planet-card label{
+    text-align: center;
+    font-family: var(--spartan);
+    font-size: 25px;
+    
+}
+
+
+

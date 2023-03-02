@@ -42,11 +42,6 @@ export default function PlanetInfo (){
 
     
 
-    
-    
-    
-    
-
     return(
         <div className='content-ctr'>
             <div className={`${targetPlanet}-img img-ctr`} id={`${targetPlanet}-${endPointPath}`}>
