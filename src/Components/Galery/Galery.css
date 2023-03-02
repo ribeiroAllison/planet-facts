@@ -1,4 +1,6 @@
-
+#phone{
+    display: none;
+}
 
 #galery{
     display: flex;
@@ -50,5 +52,14 @@
     
 }
 
+@media only screen and (max-width: 460px){
+    
+    #desktop{
+        display: none;
+    }
+    
 
+
+
+}
 

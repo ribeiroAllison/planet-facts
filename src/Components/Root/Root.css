@@ -45,4 +45,21 @@
     
 }
 
+@media only screen and (max-width: 460px){
+    #links{
+        display: none;
+    }
+
+    #home{
+        text-align: center;
+        width: 100%;
+        font-size: 60px;
+    }
+
+    #root header{
+        height: 70px;
+    }
+
+}
+
 

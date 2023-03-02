@@ -17,22 +17,22 @@ export default function PlanetInfo (){
     const endPointString = endPointPath ? "-" + endPointPath : "";
 
     function findContent () {
-        if(endPointPath === "overview") {
-            return planet.overview.content
+        if(endPointPath === "geology") {
+            return planet.geology.content
         } else if(endPointPath === "structure"){
             return planet.structure.content
         } else {
-            return planet.geology.content
+            return planet.overview.content
         }
     }
 
     function findSource () {
-        if(endPointPath === "overview") {
-            return planet.overview.source
+        if(endPointPath === "geology") {
+            return planet.geology.source
         } else if(endPointPath === "structure"){
             return planet.structure.source
         } else {
-            return planet.geology.source
+            return planet.overview.source
         }
     }
 
