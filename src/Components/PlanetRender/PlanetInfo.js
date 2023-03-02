@@ -17,7 +17,7 @@ export default function PlanetInfo (){
     const endPointString = endPointPath ? "-" + endPointPath : "";
 
     function findContent () {
-        if(endPointPath === false) {
+        if(endPointPath === "overview") {
             return planet.overview.content
         } else if(endPointPath === "structure"){
             return planet.structure.content
@@ -27,7 +27,7 @@ export default function PlanetInfo (){
     }
 
     function findSource () {
-        if(endPointPath === false) {
+        if(endPointPath === "overview") {
             return planet.overview.source
         } else if(endPointPath === "structure"){
             return planet.structure.source
@@ -50,7 +50,7 @@ export default function PlanetInfo (){
     return(
         <div className='content-ctr'>
             <div className={`${targetPlanet}-img img-ctr`} id={`${targetPlanet}-${endPointPath}`}>
-                <img  alt="planet picture" src={require(`../assets/planet-${targetPlanet}${endPointString}.png`)} />
+                <img  alt="planet" src={require(`../assets/planet-${targetPlanet}${endPointString}.png`)} />
             </div>
             
             <article className='content'>
