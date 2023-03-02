@@ -3,17 +3,18 @@ import {useLocation} from 'react-router-dom'
 export const usePathname = () =>{
     const location = useLocation();
     return location.pathname;
+    
 }
 
 
 
 export function eraseDash(string){
+const split = string.split("/")
+const targetPlanet = split[1]
 let wordArray=[];
-for (let letter of string){
-    if(letter !== "/"){
-        wordArray.push(letter)
-    }
-    
+return targetPlanet
 }
-return wordArray.join("");
-}
+
+const string = "/mercury/structure";
+const splitTest = string.split("/");
+console.log(splitTest)

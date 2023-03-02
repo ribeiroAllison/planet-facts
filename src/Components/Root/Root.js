@@ -12,12 +12,12 @@ export default function Navbar () {
                 <div id='links'>
                 <NavLink to="/mercury">Mercury</NavLink>
                 <NavLink to="/venus">Venus</NavLink>
-                <NavLink to="">Earth</NavLink>
-                <NavLink to="">Mars</NavLink>
-                <NavLink to="">Jupiter</NavLink>
-                <NavLink to="">Saturn</NavLink>
-                <NavLink to="">Uranus</NavLink>
-                <NavLink to="">Neptune</NavLink>
+                <NavLink to="/earth">Earth</NavLink>
+                <NavLink to="/mars">Mars</NavLink>
+                <NavLink to="/jupiter">Jupiter</NavLink>
+                <NavLink to="/saturn">Saturn</NavLink>
+                <NavLink to="/uranus">Uranus</NavLink>
+                <NavLink to="/neptune">Neptune</NavLink>
 
                 </div>
             </header>

@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { data } from '../../data';
 import { usePathname, eraseDash } from '../assets/functions';
 
-export default function OverviewMercury (){
+export default function PlanetInfo (){
 
     
     const path = usePathname();
@@ -30,16 +30,16 @@ export default function OverviewMercury (){
                     <p id="source-label">Source:</p>
                     <a href={planet.overview.source} target='_blank' rel="noreferrer">Wikipedia</a>
                 </div>
-                <div id='buttons'>
+                <div id='buttons' className={`buttons-${endPoint}`}>
                     <NavLink to={`/${endPoint}`}>
                         <p className='buttonNumber'>01</p>
                         <p>OVERVIEW</p>
                     </NavLink>
-                    <NavLink to="/">
+                    <NavLink to={`/${endPoint}/structure`}>
                         <p className='buttonNumber'>02</p>
                         <p>INTERNAL STRUCTURE</p>
                     </NavLink>
-                    <NavLink to="/">
+                    <NavLink to={`/${endPoint}/geology`}>
                         <p className='buttonNumber'>02</p>
                         <p>SURFACE GEOLOGY</p>
                     </NavLink>

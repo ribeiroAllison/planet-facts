@@ -13,7 +13,7 @@
     --salmon: #D14C32;
     --red: #D83A34;
     --orange: #CD5120;
-    --tiffany: #1EC2A4;
+    --tiffany: #1EC1A2;
     --blue: #2D68F0;
 
     /* FONTS */
@@ -66,13 +66,43 @@
 }
 
 .mercury-img img{
-    width: 290px;
-    height: 290px;
+    width: 220px;
+    height: 220px;
 }
 
 .venus-img img{
+    width: 300px;
+    height: 300px;
+}
+
+.earth-img img{
+    width: 320px;
+    height: 320px;
+}
+
+.mars-img img{
+    width: 260px;
+    height: 260px;
+}
+
+.jupiter-img img{
+    width: 450px;
+    height: 450px;
+}
+
+.saturn-img img{
     width: 400px;
     height: 400px;
+}
+
+.uranus-img img{
+    width: 380px;
+    height: 380px;
+}
+
+.neptune-img img{
+    width: 370px;
+    height: 350px;
 }
 
 .content{
@@ -147,6 +177,36 @@
     height: 48px;
 }
 
-#buttons a.active{
+.buttons-mercury a.active{
     background-color: var(--lightBlue);
 }
+
+.buttons-venus a.active{
+    background-color: var(--sand);
+}
+
+.buttons-earth a.active{
+    background-color: var(--purple);
+}
+
+.buttons-mars a.active{
+    background-color: var(--salmon);
+}
+
+.buttons-jupiter a.active{
+    background-color: var(--red);
+}
+
+.buttons-saturn a.active{
+    background-color: var(--orange);
+}
+
+.buttons-uranus a.active{
+    background-color: var(--tiffany);
+}
+
+.buttons-neptune a.active{
+    background-color: var(--blue);
+}
+
+
