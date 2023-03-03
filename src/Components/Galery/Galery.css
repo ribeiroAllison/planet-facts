@@ -2,11 +2,12 @@
     display: none;
 }
 
-#galery{
+#desktop{
     display: flex;
     flex-wrap: wrap;
     height: 100lvh;
     margin-left:8%;
+    width: 100%;
     
 }
 
@@ -57,6 +58,8 @@
     #desktop{
         display: none;
     }
+
+
     
 
 
