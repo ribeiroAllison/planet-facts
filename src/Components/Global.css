@@ -67,12 +67,12 @@
 
 .mercury-img img{
     width: 220px;
-    height: 220px;
+    height: 320px;
 }
 
 #mercury-geology img{
     width: 220px;
-    height: 320px;
+    height: 220px;
 }
 
 .venus-img img{
@@ -114,6 +114,8 @@
     width: 400px;
     height: 400px;
 }
+
+
 
 
 
@@ -192,6 +194,8 @@
     align-items: center;
     text-decoration: none;
     font-family: var(--spartan);
+    margin: 10px 20%;
+    height: 48px;
     
 }
 
@@ -204,9 +208,9 @@
     color: rgba(255, 255, 255, 0.500);
 }
 
-#buttons a{
-    margin: 10px 20%;
-    height: 48px;
+
+#phone-buttons{
+    display: none;
 }
 
 .buttons-mercury a.active{
@@ -241,4 +245,263 @@
     background-color: var(--blue);
 }
 
+
+/* MEDIA QUERY SECTION */
+
+@media only screen and (max-width: 480px){
+
+    .content-ctr{
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+
+    /* IMAGE */
+
+    .img-ctr{
+        margin: 70px 0;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+    .content h1{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    /* TEXT */
+    .content-ctr article p{
+        width: 80%;
+        padding: 0;
+        font-family: var(--spartan);
+        font-size: 15px;
+        margin: auto;
+        text-align: justify;
+        
+    }
+
+    /* SOURCE */
+
+    .source{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+        
+        
+    }
+    
+    #source-label{
+        padding-right: 0px;
+        font-size: 16px;
+        width: 60px;
+        margin: 0;
+        padding-top: 5px;
+        
+    }
+    
+    .source a{
+        font-size: 13px;
+    }
+
+    /* BUTTONS */
+
+    #desktop-buttons{
+        display: none;
+    }
+
+    #phone-buttons{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #buttons{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        border-top : 1px solid #9797977a;
+        border-bottom: 1px solid #9797977a;
+        align-items: center;
+        
+    }
+
+    #buttons a{
+        display: block;
+        border: none;
+        margin: 0;
+        font-size: 12px;
+        padding: 20px 0;
+        height: auto;
+        
+        
+        
+    }
+
+    .buttonNumber{
+        display: none;
+    }
+
+    .buttons-mercury a.active{
+        font-weight: bold;
+        text-shadow:1px 1px 10px var(--lightBlue), 1px 1px 10px var(--lightBlue);
+        background-color: transparent;
+    }
+    
+    .buttons-venus a.active{
+        font-weight: bold;
+        text-shadow:1px 1px 10px var(--lightBlue), 1px 1px 10px var(--lightBlue);
+        background-color: transparent;
+    }
+    
+    .buttons-earth a.active{
+        font-weight: bold;
+        text-shadow:1px 1px 10px var(--lightBlue), 1px 1px 10px var(--lightBlue);
+        background-color: transparent;
+    }
+    
+    .buttons-mars a.active{
+        font-weight: bold;
+        text-shadow:1px 1px 10px var(--lightBlue), 1px 1px 10px var(--lightBlue);
+        background-color: transparent;
+    }
+    
+    .buttons-jupiter a.active{
+        font-weight: bold;
+        text-shadow:1px 1px 10px var(--lightBlue), 1px 1px 10px var(--lightBlue);
+        background-color: transparent;
+    }
+    
+    .buttons-saturn a.active{
+        font-weight: bold;
+        text-shadow:1px 1px 10px var(--lightBlue), 1px 1px 10px var(--lightBlue);
+        background-color: transparent;
+    }
+    
+    .buttons-uranus a.active{
+        font-weight: bold;
+        text-shadow:1px 1px 10px var(--lightBlue), 1px 1px 10px var(--lightBlue);
+        background-color: transparent;
+    }
+    
+    .buttons-neptune a.active{
+        font-weight: bold;
+        text-shadow:1px 1px 10px var(--lightBlue), 1px 1px 10px var(--lightBlue);
+        background-color: transparent;
+    }
+
+
+    /* FOOTER SECTION */
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        border: 1px solid #9797977a;
+    }
+
+    .cards h3{
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .cards p{
+        font-size: 12px;
+        padding: 0;
+        margin-left: 15px;
+        color: #979797;
+        
+    }
+
+    .cards h3,p {
+        padding: 10px;
+    }
+
+
+
+    /* IMAGE SUBSECTION */
+
+    .mercury-img img{
+        width: 120px;
+        height: 120px;
+    }
+    
+    #mercury-geology img{
+        width: 120px;
+        height: 180px;
+    }
+
+
+    .venus-img img{
+        width: 150px;
+        height: 150px;
+    }
+    
+    #venus-geology img{
+        width: 150px;
+        height: 180px;
+    }
+    
+    .earth-img img{
+        width: 170px;
+        height: 170px;
+    }
+    
+    #earth-geology img{
+        width: 170px;
+        height: 190px;
+    }
+    
+    .mars-img img{
+        width: 135px;
+        height: 135px;
+    }
+    
+    #mars-geology img {
+        width: 135px;
+        height: 180px;
+    }
+    
+    .jupiter-img img{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .saturn-img img{
+        width: 260px;
+        height: 260px;
+    }
+    
+    
+    
+    .uranus-img img{
+        width: 240px;
+        height: 240px;
+    }
+    
+    #uranus-geology img{
+        width: 240px;
+        height: 270px;
+    }
+    
+    .neptune-img img{
+        width: 230px;
+        height: 230px;
+    }
+    
+    #neptune-geology img {
+        width: 230px;
+        height: 260px;
+    }
+}
 

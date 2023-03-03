@@ -44,6 +44,11 @@ export default function PlanetInfo (){
 
     return(
         <div className='content-ctr'>
+
+            <div id="phone-buttons">
+                <Buttons />
+            </div>
+            
             <div className={`${targetPlanet}-img img-ctr`} id={`${targetPlanet}-${endPointPath}`}>
                 <img  alt="planet" src={require(`../assets/planet-${targetPlanet}${endPointString}.png`)} />
             </div>
@@ -57,7 +62,11 @@ export default function PlanetInfo (){
                     <p id="source-label">Source:</p>
                     <a href={source} target='_blank' rel="noreferrer">Wikipedia</a>
                 </div>
+
+                <div id="desktop-buttons">
                 <Buttons />
+                </div>
+                
             </article>
             
         </div>

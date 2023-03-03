@@ -2,6 +2,10 @@
     display: none;
 }
 
+#galery{
+    height: 100%;
+}
+
 #desktop{
     display: flex;
     flex-wrap: wrap;
@@ -59,7 +63,51 @@
         display: none;
     }
 
+    #phone{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .planet-card img{
+        width: 20px;
+        height: 20px;
+        
+    }
+
+    .planet-card{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        border: none;
+        border-bottom: 1px solid #979797;
+        border-radius: 0;
+        
+    }
+
+    .menu-planet{
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-planet label{
+        margin-left: 20px;
+        font-weight: 800;
+        
+    }
+
+    .menu-ctr{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+
+    .arrow img{
+        width: 7px;
+        height: auto;
+    }
     
 
 

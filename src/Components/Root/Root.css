@@ -46,6 +46,8 @@
 }
 
 @media only screen and (max-width: 460px){
+    
+    
     #links{
         display: none;
     }
@@ -58,7 +60,12 @@
 
     #root header{
         height: 70px;
+        border-bottom: 0;
     }
+
+    
+
+    
 
 }
 
