@@ -54,13 +54,15 @@ export default function PlanetInfo (){
             </div>
             
             <article className='content'>
-                <h1>{ planet.name.toUpperCase()}</h1>
-                <p>
-                {content}
-                </p>
-                <div className='source'>
-                    <p id="source-label">Source:</p>
-                    <a href={source} target='_blank' rel="noreferrer">Wikipedia</a>
+                <div id="planet-text">
+                    <h1>{ planet.name.toUpperCase()}</h1>
+                    <p>
+                    {content}
+                    </p>
+                    <div className='source'>
+                        <p id="source-label">Source:</p>
+                        <a href={source} target='_blank' rel="noreferrer">Wikipedia</a>
+                    </div>
                 </div>
 
                 <div id="desktop-buttons">

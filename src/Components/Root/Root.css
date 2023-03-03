@@ -45,7 +45,8 @@
     
 }
 
-@media only screen and (max-width: 460px){
+/* PHONE MEDIA QUERY */
+@media only screen and (max-width: 480px){
     
     
     #links{
@@ -66,6 +67,27 @@
     
 
     
+
+}
+
+
+/* TABLET MEDIA QUERY */
+
+@media only screen and (max-width:1050px) and (min-width: 481px) { 
+    
+    #root header{
+        
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    #links{
+        width: 90%;
+        
+    } 
+
+ 
+
 
 }
 
