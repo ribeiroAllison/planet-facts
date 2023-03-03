@@ -11,7 +11,7 @@ export default function PlanetCompiler () {
     const planet = data[targetPlanet]
     
     return(
-        <div id="mercury">
+        <div>
             <main>
                 <Outlet />
             </main>

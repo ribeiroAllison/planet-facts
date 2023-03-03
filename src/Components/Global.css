@@ -67,12 +67,12 @@
 
 .mercury-img img{
     width: 220px;
-    height: 320px;
+    height: 220px;
 }
 
 #mercury-geology img{
     width: 220px;
-    height: 220px;
+    height: 320px;
 }
 
 .venus-img img{
@@ -248,7 +248,7 @@
 
 /* MEDIA QUERY SECTION */
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 870px){
 
     .content-ctr{
         flex-direction: column;
@@ -507,7 +507,7 @@
 
 /* TABLET MEDIA QUERY */
 
-@media only screen and (max-width:1050px) and (min-width: 481px) { 
+@media only screen and (max-width:1050px) and (min-width: 871px) { 
     
     .content-ctr{
         flex-direction: column;
@@ -516,6 +516,62 @@
     .content-ctr article{
         display: flex;
         width: 90%;
+    }
+
+    #planet-text{
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    .content-ctr article p, h1{
+        padding: 0;
+        width: 100%;
+        
+    }
+
+    #desktop-buttons{
+        width: 100%;
+    }
+
+    .content{
+        margin-top: 50px;
+        margin: 50px auto;
+    }
+
+    #buttons a{
+        margin: 30px 0 0 50px  ;
+        border: 1px solid #979797;
+    }
+
+    .source{
+        margin-top: 30px ;
+    }
+
+    #source-label{
+        width: 45px;
+    }
+
+    /* FOOTER SECTION */
+
+    .footer{
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        
+    }
+    .cards{
+        margin-right: 10px;
+        border: 1px solid #979797;
+    }
+
+    .cards h3{
+        font-size: 35px;
+        margin-top: 15px;
+    }
+
+    .cards p{
+        color: #979797;
     }
 
 }
