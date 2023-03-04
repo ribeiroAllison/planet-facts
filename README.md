@@ -6,7 +6,7 @@
 
 - [Overview](#overview)
   - [What is this?](#what-is-this)
-  - [The challenge](#the-challenge)sS
+  - [The challenge](#the-challenge)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
