@@ -7,13 +7,9 @@ export default function PlanetInfo (){
 
     
     const path = usePathname();
-
     const targetPlanet = eraseSlash(path)
-
     const planet = data[targetPlanet]
-
     const endPointPath = endPoint(path)
-
     const endPointString = endPointPath ? "-" + endPointPath : "";
 
     function findContent () {
