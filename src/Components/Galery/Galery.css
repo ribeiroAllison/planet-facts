@@ -9,6 +9,7 @@
 #desktop{
     display: flex;
     flex-wrap: wrap;
+    /* justify-content: center; */
     height: 100lvh;
     margin-left:8%;
     width: 100%;
@@ -32,7 +33,7 @@
 .planet-card:hover{
     border: 1px var(--lightBlue) solid;
     box-shadow:
-    0 0 6px 3px var(--lightBlue);  /* inner white */
+    0 0 6px 3px var(--lightBlue); 
     
     transition: 1s;
     
@@ -57,7 +58,8 @@
     
 }
 
-@media only screen and (max-width: 460px){
+/* PHONE QUERY */
+@media only screen and (max-width: 767px){
     
     #desktop{
         display: none;
@@ -110,7 +112,22 @@
     }
     
 
+    
 
 
+}
+
+/* TABLET QUERY */
+
+@media only screen and (max-width:1050px) and (min-width: 768px){
+
+    #desktop{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0;    
+    }
+
+    
 }
 
