@@ -30,9 +30,7 @@ Users should be able to:
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
 - View each planet page and toggle between "Overview", "Internal Structure", and "Surface Geology"
-
-No refresh of that page should happen when the user clicks in any link.
-
+- No refresh on any page
 
 
 ### Links
@@ -52,14 +50,12 @@ No refresh of that page should happen when the user clicks in any link.
 
 ### What I learned
 
-- I had never touched `React Router V6` before this project, therefore I had to study its documentation before engadging in this endevour.
+- I had never touched `React Router V6` before this project, therefore I had to study its documentation before engaging in this endeavor.
 
 - I've learned some cool ways to use JSX and path Hooks to make a `single component render lots of different information.`
 
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+#### Some code I'm pride of
 
 `This hover effect turned out to be really beautiful!!`
 
@@ -72,7 +68,15 @@ planet-card:hover{
     transition: 1s;
     
 }
+
+.planet-card img:hover{
+    width: 220px;
+    height: 220px;
+    transition: 1s;
+}
 ```
+
+
 `This was my first custom Hook in React!!`
 
 ```js
@@ -96,7 +100,7 @@ export function endPoint(string) {
 }
 ```
 
-`One Component that render pretty much everything using URL path name!`
+`One Component that renders pretty much everything using URL path name!`
 
 ```js
   const path = usePathname();
@@ -116,6 +120,13 @@ export function endPoint(string) {
     }
 
 ```
+
+`By far the most complex media query I've ever written, having complete adaptions to phone, tablet and desktop`
+
+![alt screenshot of program's desktop version](/src/Components/assets/sreenshot-desktop.jpg "Desktop screenshot")
+![alt screenshot of program's tablet version](/src/Components/assets/screenshot-tablet.jpg "Tablet screenshot")
+![alt screenshot of program's phone version](/src/Components/assets/sreenshot-phone.jpg "Phone screenshot")
+
 
 ### Continued development
 
