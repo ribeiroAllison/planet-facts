@@ -21,7 +21,7 @@ export default function Buttons (){
                 <p>INTERNAL STRUCTURE</p>
             </NavLink>
             <NavLink to={`/${targetPlanet}/geology`}>
-                <p className='buttonNumber'>02</p>
+                <p className='buttonNumber'>03</p>
                 <p>SURFACE GEOLOGY</p>
             </NavLink>
         </div>
