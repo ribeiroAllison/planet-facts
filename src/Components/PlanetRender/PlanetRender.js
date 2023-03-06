@@ -15,6 +15,7 @@ export default function PlanetCompiler () {
             <main>
                 <Outlet />
             </main>
+            {/* All the info here comes from data.js array of objects, planet name is defined by usePathname custom hook and getPlanetFromURL function */}
             <footer className="footer">
                 <div className="cards">
                     <p>ROTATION TIME</p>

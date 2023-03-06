@@ -6,12 +6,14 @@ import Buttons from './Buttons';
 export default function PlanetInfo (){
 
     
-    const path = usePathname();
-    const targetPlanet = getPlanetFromURL(path)
-    const planet = data[targetPlanet]
-    const endPointPath = endPoint(path)
-    const endPointString = endPointPath ? "-" + endPointPath : "";
+    const path = usePathname(); //extract path name from object resulted by calling useLocation() hook
+    const targetPlanet = getPlanetFromURL(path) // extract planet name from path
+    const planet = data[targetPlanet] // extract planet info from data.js array of objects
+    const endPointPath = endPoint(path) //extract end point from path if it does not end with planet name
+    const endPointString = endPointPath ? "-" + endPointPath : ""; //if the path name ends with planet name return nothing, else return p "-" + end point
 
+
+    // checks what is the end point and returns the corresponding planet info from data.js array of objects
     function findContent () {
         if(endPointPath === "geology") {
             return planet.geology.content
@@ -22,6 +24,8 @@ export default function PlanetInfo (){
         }
     }
 
+
+    // checks what is the end point and returns the corresponding source info from data.js array of objects
     function findSource () {
         if(endPointPath === "geology") {
             return planet.geology.source

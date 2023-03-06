@@ -7,7 +7,7 @@ export default function Buttons (){
     
     const path = usePathname();
 
-    const targetPlanet = getPlanetFromURL(path)
+    const targetPlanet = getPlanetFromURL(path) // extracted planet name from URL
 
     return(
         <div id='buttons' className={`buttons-${targetPlanet}`}>
