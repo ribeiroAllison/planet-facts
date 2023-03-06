@@ -1,13 +1,13 @@
 import '../../Components/Global.css';
 import { NavLink } from 'react-router-dom';
-import { usePathname, eraseSlash } from '../assets/functions';
+import { usePathname, getPlanetFromURL } from '../assets/functions';
 
 export default function Buttons (){
 
     
     const path = usePathname();
 
-    const targetPlanet = eraseSlash(path)
+    const targetPlanet = getPlanetFromURL(path)
 
     return(
         <div id='buttons' className={`buttons-${targetPlanet}`}>

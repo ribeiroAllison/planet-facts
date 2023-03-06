@@ -1,12 +1,12 @@
 import { Outlet } from "react-router-dom"
 import '../../Components/Global.css'
 import { data } from "../../data"
-import { usePathname, eraseSlash } from '../assets/functions';
+import { usePathname, getPlanetFromURL } from '../assets/functions';
 
 export default function PlanetCompiler () {
     const path = usePathname();
 
-    const targetPlanet = eraseSlash(path)
+    const targetPlanet = getPlanetFromURL(path)
 
     const planet = data[targetPlanet]
     

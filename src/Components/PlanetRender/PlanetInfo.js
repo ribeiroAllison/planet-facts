@@ -1,13 +1,13 @@
 import '../../Components/Global.css';
 import { data } from '../../data';
-import { usePathname, eraseSlash, endPoint } from '../assets/functions';
+import { usePathname, getPlanetFromURL, endPoint } from '../assets/functions';
 import Buttons from './Buttons';
 
 export default function PlanetInfo (){
 
     
     const path = usePathname();
-    const targetPlanet = eraseSlash(path)
+    const targetPlanet = getPlanetFromURL(path)
     const planet = data[targetPlanet]
     const endPointPath = endPoint(path)
     const endPointString = endPointPath ? "-" + endPointPath : "";
