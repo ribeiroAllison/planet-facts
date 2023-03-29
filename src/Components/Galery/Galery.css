@@ -1,3 +1,8 @@
+:root{
+
+    box-sizing: border-box;
+}
+
 #phone{
     display: none;
 }
@@ -10,8 +15,10 @@
     display: flex;
     flex-wrap: wrap;
     height: 100lvh;
-    margin-left:8%;
+    justify-content: center;
     width: 100%;
+    gap: 15px;
+    padding: 15px 0;
     
 }
 
@@ -21,7 +28,6 @@
     justify-content: center;
     align-items: center;
     width: 250px;
-    margin: 10px;
     border: 1px solid;
     border-radius: 10px;
     text-decoration: none;

@@ -40,6 +40,7 @@ export default function Galery () {
                     <img  alt="planet" id="neptune-img" src={require(`../assets/planet-neptune.png`)} />
                     <label for="neptune-img">Neptune</label>
                 </Link>
+                
             </div>
 
 
