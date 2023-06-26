@@ -3,12 +3,13 @@ import { data } from '../../data';
 import { usePathname, getPlanetFromURL, endPoint } from '../assets/functions';
 import Buttons from './Buttons';
 
-export default function PlanetInfo (){
+export default function PlanetInfo (props){
 
     
     const path = usePathname(); //extract path name from object resulted by calling useLocation() hook
     const targetPlanet = getPlanetFromURL(path) // extract planet name from path
-    const planet = data[targetPlanet] // extract planet info from data.js array of objects
+    // const planet = data[targetPlanet] // extract planet info from data.js array of objects
+    const planet = props.planet;
     const endPointPath = endPoint(path) //extract end point from path if it does not end with planet name
     const endPointString = endPointPath ? "-" + endPointPath : ""; //if the path name ends with planet name return nothing, else return p "-" + end point
 

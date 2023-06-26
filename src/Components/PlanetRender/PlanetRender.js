@@ -3,12 +3,13 @@ import '../../Components/Global.css'
 import { data } from "../../data"
 import { usePathname, getPlanetFromURL } from '../assets/functions';
 
-export default function PlanetCompiler () {
-    const path = usePathname();
+export default function PlanetCompiler (props) {
+    // const path = usePathname();
 
-    const targetPlanet = getPlanetFromURL(path)
+    // const targetPlanet = getPlanetFromURL(path)
 
-    const planet = data[targetPlanet]
+    // const planet = data[targetPlanet]
+    const planet = props.planet
     
     return(
         <div>

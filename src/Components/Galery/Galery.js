@@ -4,6 +4,8 @@ import { Link } from "react-router-dom"
 
 export default function Galery () {
 
+    
+
     return(
         
         <main id="galery">
