@@ -25,9 +25,6 @@ function App() {
     fetchPlanets();
   }, []);
 
-  const findPlanetData = (planetName) =>{
-    return planets.find(planet => planet.name.toLowerCase() === planetName.toLowerCase());
-  }
 
   const router = 
   createBrowserRouter(createRoutesFromElements(

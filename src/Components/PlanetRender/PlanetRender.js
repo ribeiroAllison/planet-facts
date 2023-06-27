@@ -13,12 +13,12 @@ export default function PlanetCompiler (props) {
 
     
     return(
-        <div>
+        <>
             <main>
                 <Outlet/>
             </main>
             {/* All the info here comes from data.js array of objects, planet name is defined by usePathname custom hook and getPlanetFromURL function */}
             <Footer planet={planet}/>
-        </div>
+        </>
     )
 }
