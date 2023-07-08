@@ -17,7 +17,8 @@ export default function PlanetCompiler (props) {
             <main>
                 <Outlet/>
             </main>
-            {/* All the info here comes from data.js array of objects, planet name is defined by usePathname custom hook and getPlanetFromURL function */}
+            {/* All the info here comes from array of objects got from server, planet name is 
+            defined by usePathname custom hook and getPlanetFromURL function */}
             <Footer planet={planet}/>
         </>
     )

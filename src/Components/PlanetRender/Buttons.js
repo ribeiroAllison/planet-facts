@@ -1,6 +1,7 @@
 import '../../Components/Global.css';
 import { NavLink } from 'react-router-dom';
-import { usePathname, getPlanetFromURL } from '../assets/functions';
+import usePathname from '../../utils/usePathname';
+import getPlanetFromURL from '../../utils/getPlanetFromUrl';
 
 export default function Buttons (){
 

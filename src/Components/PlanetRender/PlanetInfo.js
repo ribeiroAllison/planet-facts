@@ -1,6 +1,8 @@
 import '../../Components/Global.css';
 import { data } from '../../data';
-import { usePathname, getPlanetFromURL, endPoint } from '../assets/functions';
+import usePathname from '../../utils/usePathname';
+import getPlanetFromURL from '../../utils/getPlanetFromUrl';
+import { endPoint } from '../assets/functions';
 import Buttons from './Buttons';
 import findPlanetData from '../../utils/findPlanetData';
 
@@ -8,12 +10,12 @@ export default function PlanetInfo (props){
     
     const planetsArray = props.planets;
     const path = usePathname(); //extract path name from object resulted by calling useLocation() hook
-    const planet = findPlanetData(targetPlanet, planetsArray);
+    const targetPlanet = getPlanetFromURL(path) //search for the planet name in the path;
+    const planet = findPlanetData(targetPlanet, planetsArray) //find the correct planet in the objects array got from server;
     const endPointPath = endPoint(path) //extract end point from path if it does not end with planet name
-    const endPointString = endPointPath ? "-" + endPointPath : ""; //if the path name ends with planet name return nothing, else return "-" + end point
 
 
-    // checks what is the end point and returns the corresponding planet info from data.js array of objects
+    // checks what is the end point and returns the corresponding planet info from array of objects for from server request
     function findContent () {
         if(endPointPath === "geology") {
             return planet.geology.content
@@ -25,7 +27,7 @@ export default function PlanetInfo (props){
     }
 
 
-    // checks what is the end point and returns the corresponding source info from data.js array of objects
+    // checks what is the end point and returns the corresponding source info from array of objects
     function findSource () {
         if(endPointPath === "geology") {
             return planet.geology.source
@@ -35,6 +37,8 @@ export default function PlanetInfo (props){
             return planet.overview.source
         }
     }
+
+    
 
     const content = findContent();
 
@@ -49,10 +53,22 @@ export default function PlanetInfo (props){
                 <Buttons />
             </div>
             
+            {/* Shows the correct info depending on endpath (planet-name, structure or geology) */}
             <div className={`${targetPlanet}-img img-ctr`} id={`${targetPlanet}-${endPointPath}`}>
-                <img  alt="planet" src={require(`../assets/planet-${targetPlanet}${endPointString}.png`)} />
+                {
+                    !endPointPath && <img  alt="planet" src={planet.images.planet} />
+                }
+                {
+                    endPointPath === 'structure' && <img  alt="planet's internal structure" src={planet.images.internal} />
+                }
+
+{
+                    endPointPath === 'geology' && <img  alt="planet's geology" src={planet.images.geology} />
+                }
+                
             </div>
             
+            {/* Switches source link depending on planet name */}
             <article className='content'>
                 <div id="planet-text">
                     <h1>{ planet.name.toUpperCase()}</h1>

@@ -29,7 +29,7 @@ function App() {
   const router = 
   createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={ <Root />}>
-      <Route index element={<Galery />}/>
+      <Route index element={<Galery planets={planets}/>}/>
       <Route path=":planetURL"  element={<PlanetRender planets={planets}/>}>
         <Route index element={<PlanetInfo planets={planets}/>} end/>
         <Route path="structure" element={<PlanetInfo planets={planets}/>}/>
