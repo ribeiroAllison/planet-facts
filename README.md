@@ -5,6 +5,7 @@
 ## Table of contents
 
 - [Overview](#overview)
+  - [How to Run It?](#how-to-run-it)
   - [What is this?](#what-is-this)
   - [The challenge](#the-challenge)
   - [Links](#links)
@@ -16,6 +17,23 @@
 
 
 ## Overview
+
+## How to run it?
+
+Download or clone the repository, open a terminal and navigate to the project's folder
+
+Run this command in the terminal:
+```npm install```
+
+After the installation is done run 
+```npx json-server --watch <PATH TO FOLDER>/planet-facts/src/API/db.json --port 3003```
+
+**ATTENTION:** You should substitute the ```<PATH TO FOLDER>``` part of the command above with the path to the folder where you saved the project.
+
+With the server running open a new terminal, navigate to the project's folder and run:
+```npm start```
+
+Open your browser and follow this link: [http://localhost:3000](http://localhost:3000)
 
 ### What is this?
 
@@ -35,7 +53,7 @@ Users should be able to:
 
 ### Links
 
-- Finished project URL: [https://planet-facts-ribeiroallison.vercel.app/](https://planet-facts-ribeiroallison.vercel.app/)
+- Figma File: [FIGMA](https://www.figma.com/file/T9Te6zgmZso49aQddxr2Qv/planets-fact-site?type=design&node-id=0%3A1&mode=design&t=OeiESYt3x9T173GM-1)
 
 
 ## My process

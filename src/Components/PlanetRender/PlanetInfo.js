@@ -2,7 +2,7 @@ import '../../Components/Global.css';
 import { data } from '../../data';
 import usePathname from '../../utils/usePathname';
 import getPlanetFromURL from '../../utils/getPlanetFromUrl';
-import { endPoint } from '../assets/functions';
+import endPoint from '../../utils/endPoint';
 import Buttons from './Buttons';
 import findPlanetData from '../../utils/findPlanetData';
 
