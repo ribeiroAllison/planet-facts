@@ -43,9 +43,7 @@ Open your browser and follow this link: [http://localhost:3000](http://localhost
 
 ### What is this?
 
-This is a project to exercise the concept of React Router post V6. 
-
-It is a web app that allows you to see some interesting information about all of the 8 planets in our solar system.
+This is a project to complete the MVP required for the second sprint (advanced front-end) of the PUC-Rio university grad school for software development.
 
 ### The challenge
 
@@ -124,7 +122,11 @@ planet-card:hover{
 `By far the most complex media query I've ever written, having complete adaptions to phone, tablet and desktop`
 
 ![alt screenshot of program's desktop version](/public/images/sreenshot-desktop.jpg "Desktop screenshot")
+
+
 ![alt screenshot of program's tablet version](/public/images/screenshot-tablet.jpg "Tablet screenshot")
+
+
 ![alt screenshot of program's phone version](/public/images/sreenshot-phone.jpg "Phone screenshot")
 
 
