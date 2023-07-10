@@ -1,6 +1,6 @@
 # Planets facts
 
-![alt screenshot of the program](/images/screenshot.jpg "Program screenshot")
+![alt screenshot of the program](/public/images/screenshot.jpg "Program screenshot")
 
 ## Table of contents
 
@@ -24,7 +24,7 @@ Download or clone the repository, open a terminal and navigate to the project's 
 
 Run this command in the terminal:
 ```
-    npm install
+npm install
 ```
 
 After the installation is done run 
@@ -37,7 +37,6 @@ npx json-server --watch <PATH TO FOLDER>/planet-facts/src/API/db.json --port 300
 With the server running open a new terminal, navigate to the project's folder and run:
 ```
 npm start
-
 ```
 
 Open your browser and follow this link: [http://localhost:3000](http://localhost:3000)
@@ -124,9 +123,9 @@ planet-card:hover{
 
 `By far the most complex media query I've ever written, having complete adaptions to phone, tablet and desktop`
 
-![alt screenshot of program's desktop version](/images/sreenshot-desktop.jpg "Desktop screenshot")
-![alt screenshot of program's tablet version](/images/screenshot-tablet.jpg "Tablet screenshot")
-![alt screenshot of program's phone version](/images/sreenshot-phone.jpg "Phone screenshot")
+![alt screenshot of program's desktop version](/public/images/sreenshot-desktop.jpg "Desktop screenshot")
+![alt screenshot of program's tablet version](/public/images/screenshot-tablet.jpg "Tablet screenshot")
+![alt screenshot of program's phone version](/public/images/sreenshot-phone.jpg "Phone screenshot")
 
 
 ### Continued development
