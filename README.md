@@ -1,6 +1,6 @@
 # Planets facts
 
-![alt screenshot of the program](/src/Components/assets/screenshot.jpg "Program screenshot")
+![alt screenshot of the program](/images/screenshot.jpg "Program screenshot")
 
 ## Table of contents
 
@@ -23,15 +23,22 @@
 Download or clone the repository, open a terminal and navigate to the project's folder
 
 Run this command in the terminal:
-```npm install```
+```
+    npm install
+```
 
 After the installation is done run 
-```npx json-server --watch <PATH TO FOLDER>/planet-facts/src/API/db.json --port 3003```
+```
+npx json-server --watch <PATH TO FOLDER>/planet-facts/src/API/db.json --port 3003
+```
 
 **ATTENTION:** You should substitute the ```<PATH TO FOLDER>``` part of the command above with the path to the folder where you saved the project.
 
 With the server running open a new terminal, navigate to the project's folder and run:
-```npm start```
+```
+npm start
+
+```
 
 Open your browser and follow this link: [http://localhost:3000](http://localhost:3000)
 
@@ -68,9 +75,8 @@ Users should be able to:
 
 ### What I learned
 
-- I had never touched `React Router V6` before this project, therefore I had to study its documentation before engaging in this endeavor.
-
 - I've learned some cool ways to use JSX and path Hooks to make a `single component render lots of different information.`
+
 
 
 #### Some code I'm pride of
@@ -95,29 +101,6 @@ planet-card:hover{
 ```
 
 
-`This was my first custom Hook in React!!`
-
-```js
-export const usePathname = () =>{
-    const location = useLocation();
-    return location.pathname;
-    
-}
-
-export function eraseSlash(string){
-    const path = string.split("/")
-    const targetPlanet = path[1]
-    return targetPlanet
-}
-
-export function endPoint(string) {
-    const path = string.split("/");
-    let endPoint;
-    return path.length > 2  ? endPoint = path[2] : false;
-    
-}
-```
-
 `One Component that renders pretty much everything using URL path name!`
 
 ```js
@@ -141,9 +124,9 @@ export function endPoint(string) {
 
 `By far the most complex media query I've ever written, having complete adaptions to phone, tablet and desktop`
 
-![alt screenshot of program's desktop version](/src/Components/assets/sreenshot-desktop.jpg "Desktop screenshot")
-![alt screenshot of program's tablet version](/src/Components/assets/screenshot-tablet.jpg "Tablet screenshot")
-![alt screenshot of program's phone version](/src/Components/assets/sreenshot-phone.jpg "Phone screenshot")
+![alt screenshot of program's desktop version](/images/sreenshot-desktop.jpg "Desktop screenshot")
+![alt screenshot of program's tablet version](/images/screenshot-tablet.jpg "Tablet screenshot")
+![alt screenshot of program's phone version](/images/sreenshot-phone.jpg "Phone screenshot")
 
 
 ### Continued development

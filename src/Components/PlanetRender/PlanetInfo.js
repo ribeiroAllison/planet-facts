@@ -12,10 +12,10 @@ export default function PlanetInfo (props){
     const path = usePathname(); //extract path name from object resulted by calling useLocation() hook
     const targetPlanet = getPlanetFromURL(path) //search for the planet name in the path;
     const planet = findPlanetData(targetPlanet, planetsArray) //find the correct planet in the objects array got from server;
-    const endPointPath = endPoint(path) //extract end point from path if it does not end with planet name
+    const endPointPath = endPoint(path) //extract end-point from path if it does not end with planet name
 
 
-    // checks what is the end point and returns the corresponding planet info from array of objects for from server request
+    // checks what is the end point and returns the corresponding planet info from array of objects from server request
     function findContent () {
         if(endPointPath === "geology") {
             return planet.geology.content
@@ -49,11 +49,12 @@ export default function PlanetInfo (props){
     return(
         <div className='content-ctr'>
 
+            {/* Buttons for phone media query */}
             <div id="phone-buttons">
                 <Buttons />
             </div>
             
-            {/* Shows the correct info depending on endpath (planet-name, structure or geology) */}
+            {/* Shows the correct image depending on endpath (planet-name, structure or geology) */}
             <div className={`${targetPlanet}-img img-ctr`} id={`${targetPlanet}-${endPointPath}`}>
                 {
                     !endPointPath && <img  alt="planet" src={planet.images.planet} />
