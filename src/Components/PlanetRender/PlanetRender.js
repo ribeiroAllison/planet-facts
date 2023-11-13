@@ -1,6 +1,5 @@
-import { Outlet } from "react-router-dom"
+import { Outlet, useParams } from "react-router-dom"
 import '../../Components/Global.css'
-import { useParams } from "react-router-dom"
 import findPlanetData from "../../utils/findPlanetData"
 import Footer from "../Footer/Footer"
 

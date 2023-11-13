@@ -22,7 +22,7 @@ export default function Galery (props) {
                     planetList?.map(planet => 
                         <Link to={`/${planet.name.toLowerCase()}`} className="planet-card" key={`${planet.name}-desktop`}>
                             <img  alt="planet" id={`${planet.name.toLowerCase()}-img`} src={planet.images.planet} />
-                            <label for={`${planet.name.toLowerCase()}-img`}>{planet.name}</label>
+                            <label htmlFor={`${planet.name.toLowerCase()}-img`}>{planet.name}</label>
                         </Link>)
                 }
                 
@@ -38,7 +38,7 @@ export default function Galery (props) {
                     
                                 <div className="menu-planet">
                                     <img  alt="planet" id={`${planet.name.toLowerCase()}-img`} src={planet.images.icon} />
-                                    <label for={`${planet.name.toLowerCase()}-img`}>{planet.name}</label>
+                                    <label htmlFor={`${planet.name.toLowerCase()}-img`}>{planet.name}</label>
                                 </div>
                                 <div className="arrow">
                                     <img alt="selection arrow" src={planet.images.arrow}/>
