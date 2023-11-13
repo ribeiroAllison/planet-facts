@@ -34,7 +34,7 @@ export default function Galery (props) {
 
                 {
                     planetList?.map(planet => 
-                        <Link to="/mercury" className="planet-card" key={`${planet.name}-mobile`}>
+                        <Link to={`/${planet.name.toLowerCase()}`} className="planet-card" key={`${planet.name}-mobile`}>
                     
                                 <div className="menu-planet">
                                     <img  alt="planet" id={`${planet.name.toLowerCase()}-img`} src={planet.images.icon} />
