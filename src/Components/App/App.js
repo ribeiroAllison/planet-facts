@@ -1,30 +1,15 @@
 import '../../Components/Global.css'
 import Root from '../Root/Root'
-import { useState, useEffect } from 'react';
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
-import { baseURL } from '../../utils/baseURL';
 import PlanetRender from '../PlanetRender/PlanetRender';
 import PlanetInfo from '../PlanetRender/PlanetInfo';
 import Galery from '../Galery/Galery';
+import db from '../../Database/db.json'
 
-
-import React from 'react';
 
 function App() {
 
-  const [planets, setPlanets] = useState()
-  const fetchPlanets = async () =>{
-    const response = await fetch(baseURL);
-    if(response.ok){
-      const jsonResponse = await response.json();
-      setPlanets(jsonResponse);
-    }
-  }
-
-  useEffect(() =>{
-    fetchPlanets();
-  }, []);
-
+  const planets = db.planets
 
   const router = 
   createBrowserRouter(createRoutesFromElements(
@@ -42,9 +27,7 @@ function App() {
 
   
   return (
-    <>
       <RouterProvider router={router}/>
-    </>
   );
 }
 

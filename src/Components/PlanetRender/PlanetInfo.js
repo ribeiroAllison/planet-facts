@@ -1,5 +1,4 @@
 import '../../Components/Global.css';
-import { data } from '../../data';
 import usePathname from '../../utils/usePathname';
 import getPlanetFromURL from '../../utils/getPlanetFromUrl';
 import endPoint from '../../utils/endPoint';
