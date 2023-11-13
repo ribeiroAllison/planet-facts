@@ -20,6 +20,8 @@
 
 ## How to run it?
 
+You can just visit the deployed version here: [The Planets](https://planet-facts-gilt.vercel.app) or follow the instructions bellow to run it locally.
+
 Download or clone the repository, open a terminal and navigate to the project's folder
 
 Run this command in the terminal:
@@ -28,13 +30,6 @@ npm install
 ```
 
 After the installation is done run 
-```
-npx json-server --watch <PATH TO FOLDER>/planet-facts/src/API/db.json --port 3003
-```
-
-**ATTENTION:** You should substitute the ```<PATH TO FOLDER>``` part of the command above with the path to the folder where you saved the project.
-
-With the server running open a new terminal, navigate to the project's folder and run:
 ```
 npm start
 ```
